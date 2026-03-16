@@ -7,12 +7,15 @@ const app = express();
 
 // ── CORS — must allow x-user-id header ──────────────────────────
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:3000',
+    'https:https://buddy-mate.vercel.app' // <-- PASTE YOUR ACTUAL VERCEL LINK HERE
+  ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-user-id'],
   credentials: true,
 }));
-
 app.use(express.json());
 
 // ... existing code ...
