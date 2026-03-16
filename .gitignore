@@ -1,0 +1,16 @@
+# ─── SECRETS & PASSWORDS ───
+.env
+.env.local
+
+# ─── NODE MODULES (Too big to upload) ───
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# ─── BUILD FILES ───
+dist/
+build/
+client/dist/
+
+# ─── OS JUNK FILES ───
+.DS_Store
