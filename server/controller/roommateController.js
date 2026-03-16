@@ -1,8 +1,8 @@
-const Ticket = require('../models/ticket');
+const Ticket = require('../models/Ticket'); // Make sure the 'T' matches your file!
 const MatchRequest = require('../models/MatchRequest');
 const Chat = require('../models/Chat');
-const User = require('../models/user'); // <-- ADD THIS to look up email addresses
-const sendEmail = require('../utils/sendEmail'); // <-- ADD YOUR NEW UTILITY
+const User = require('../models/User'); // <-- Capital 'U' to match User.js
+const sendEmail = require('../utils/sendEmail');
 const mongoose = require('mongoose');
 
 
