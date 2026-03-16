@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE   = "http://localhost:5000/api";
+const API_BASE   = "https://buddy-mate.onrender.com/api";
 const AV_COLORS  = ["#FF3CAC","#784BA0","#2B86C5","#00F5FF","#39FF14","#FF9F1C","#FF6B6B","#C77DFF"];
 const PREFS_LIST = ["AC Room","Non-AC Room","Ground Floor","1st Floor","2nd Floor","3rd Floor","Top Floor","Quiet Wing","Social Wing","Double Occupancy","Triple Occupancy","Near Mess","Near Library","Near Canteen","Near Sports","Corner Room"];
 const BRANCH_LIST= ["CSE","ECE","MECH","CIVIL","IT","BIOMED","EEE","CHEM","MBA","MCA"];
