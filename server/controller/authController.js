@@ -56,7 +56,8 @@ const signup = async (req, res) => {
     });
 
     res.status(200).json({ message: "OTP sent to your email!" });
-  } catch (err) {
+} catch (err) {
+    console.log("SIGNUP ERROR: ", err); // <-- ADD THIS LINE
     res.status(500).json({ error: "Server error or Invalid Email credentials" });
   }
 };
