@@ -10,13 +10,12 @@ app.use(cors({
   origin: [
     'http://localhost:5173', 
     'http://localhost:3000',
-    'https:https://buddy-mate.vercel.app' // <-- PASTE YOUR ACTUAL VERCEL LINK HERE
+    'https://buddy-mate.vercel.app' // <-- Exactly this. No slash at the end!
   ],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-user-id'],
   credentials: true,
 }));
-app.use(express.json());
 
 // ... existing code ...
 const roommateRoutes = require('./routes/roommateRoutes');
